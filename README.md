@@ -25,7 +25,7 @@ mamba activate run_cellranger_env
 ### Running
 #### On local computer
 ```
-snakemake --cores all --keep-incomplete --resources load=100
+snakemake --configfile config/config.yaml --cores all --keep-incomplete --resources load=100
 ```
 <div style="color: red;">
   <strong>Resources flag must be added when running Snakemake pipeline to ensure proper load management; modify according to computing power.</strong>
