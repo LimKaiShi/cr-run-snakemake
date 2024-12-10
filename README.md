@@ -66,8 +66,7 @@ sacct -j [job id]
 
 ### #1 Preparation of "metadata.csv"
 
-Most important step of entire workflow. In this example, the file [atac_only_md_example.csv](./workflow
-/metadata_folder/atac_only_md_example.csv) is used in the config.yaml file - any file name can be used just edit config file accordingly.
+Most important step of entire workflow. In this example, the file [atac_only_md_example.csv](./workflow/metadata_folder/atac_only_md_example.csv) is used in the config.yaml file - any file name can be used just edit config file accordingly.
 Ensure format of xxx_metadata.csv is adhered to strictly; Format should be exactly as that of the "xxx_metadata.csv" file provided.
 
 Note: "GSM" typically refers to a library and "SRR" to a run. Although these terminologies may be used inaccurately in the current context, please adhere to the column names specified in test_run_multiome.csv for consistency and accuracy.
@@ -79,6 +78,7 @@ The config.yaml file should look like as [config.yaml](./config/config.yaml)
 Ensure config.yaml files is properly adjusted. For more information and to know what suffix to use, please refer to: https://www.10xgenomics.com/support/software/cell-ranger-arc/latest/tutorials/inputs/specifying-input-fastq-count
 
 *Common mistakes include forgetting "ignore" in the suffixes section and mistyping respective paths, which may lead to errors.*
+
 *Ensure the link to download [cellranger-arc](https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/downloads/latest) and [cellranger-atac](https://support.10xgenomics.com/single-cell-atac/software/downloads/latest) is the latest as they keep changing the link*
 
 ### #3 Maintaining proper directory structure 
