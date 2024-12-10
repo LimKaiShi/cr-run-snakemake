@@ -135,3 +135,11 @@ After running the pipeline, here is how the structure look like:
         └── cr-run-snakemake.sbatch
     ```
 
+## Dependencies
+| Dependencies  |Link                                                                       |
+|:--------------|:-------------------------------------------------------------------       |
+| CellRangerARC |https://www.10xgenomics.com/support/software/cell-ranger-arc/latest        |
+| CellRangerATAC|https://support.10xgenomics.com/single-cell-atac/software/downloads/latest |
+| SRA_Toolkit   |https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit         |
+| Snakemake     |https://snakemake.readthedocs.io/en/stable/                                |
+| PigZ          |https://zlib.net/pigz/     
