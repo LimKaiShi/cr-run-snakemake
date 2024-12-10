@@ -102,10 +102,12 @@ Prior to running the snakemake pipeline, the file stucture should look like this
         └── Snakefile
         └── cr-run-snakemake.sbatch
     ```
+    
 Runs will be generated according to "ID" in metadata.csv [i.e. 1  "ID" will have 1 "outs" folder].
 
 #### After running
 After running the pipeline, here is how the structure look like:
+
  ```
     .
     ├── config
@@ -132,3 +134,4 @@ After running the pipeline, here is how the structure look like:
         └── Snakefile
         └── cr-run-snakemake.sbatch
     ```
+
