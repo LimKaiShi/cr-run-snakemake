@@ -7,9 +7,9 @@
 ```cr-run-snakemake``` can be installed by cloning the Github repository
 ```
 # Clone this repository into your local machine
-git clone https://github.com/??
+git clone https://github.com/stuart-lab/cr-run-snakemake
 
-# Change into the ?? directory
+# Change into the workflow directory
 cd cr-run-snakemake/workflow
 ```
 
