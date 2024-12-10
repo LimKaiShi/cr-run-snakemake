@@ -37,6 +37,7 @@ snakemake --configfile config/config.yaml --cores all --keep-incomplete --resour
 xxx.batch script must be present
 
 *Example of xxx.sbatch format to run pipeline:*
+
 ```
 #!/bin/bash
 
@@ -54,10 +55,13 @@ snakemake --cores all --keep-incomplete --resources load=100
 ```
 
 After preparing the sbatch file, submit the job to HPC:
+
 ```
 sbatch xxx.sbatch
 ```
+
 After running the code above, job_id will be given and you can check the jon status (```RUNNING```, ```PENDING```, ```FAILED```) by:
+
 ```
 sacct -j [job id]
 ```
@@ -85,7 +89,7 @@ Ensure config.yaml files is properly adjusted. For more information and to know 
 #### Before running
 Prior to running the snakemake pipeline, the file stucture should look like this:
 
-    ```
+```
     .
     ├── config
     │   └── config.yaml
@@ -101,14 +105,14 @@ Prior to running the snakemake pipeline, the file stucture should look like this
         |   └── run_cr.smk
         └── Snakefile
         └── cr-run-snakemake.sbatch
-    ```
+```
     
 Runs will be generated according to "ID" in metadata.csv [i.e. 1  "ID" will have 1 "outs" folder].
 
 #### After running
 After running the pipeline, here is how the structure look like:
 
- ```
+```
     .
     ├── config
     │   └── config.yaml
@@ -133,7 +137,8 @@ After running the pipeline, here is how the structure look like:
         |   └── run_cr.smk
         └── Snakefile
         └── cr-run-snakemake.sbatch
-    ```
+```
+
 
 ## Dependencies
 | Dependencies  |Link                                                                       |
