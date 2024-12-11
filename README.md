@@ -34,9 +34,9 @@ snakemake --configfile config/config.yaml --cores all --keep-incomplete --resour
 
 #### On HPC
 
-xxx.batch script must be present
+example.sbatch script must be present
 
-*Example of xxx.sbatch format to run pipeline:*
+*Example of example.sbatch format to run pipeline:*
 
 ```
 #!/bin/bash
@@ -71,7 +71,7 @@ sacct -j [job id]
 ### #1 Preparation of "metadata.csv"
 
 Most important step of entire workflow. In this example, the file [atac_only_md_example.csv](./workflow/metadata_folder/atac_only_md_example.csv) is used in the config.yaml file - any file name can be used just edit config file accordingly.
-Ensure format of xxx_metadata.csv is adhered to strictly; Format should be exactly as that of the "xxx_metadata.csv" file provided.
+Ensure format of example_metadata.csv is adhered to strictly; Format should be exactly as that of the "example_metadata.csv" file provided.
 
 Note: "GSM" typically refers to a library and "SRR" to a run. Although these terminologies may be used inaccurately in the current context, please adhere to the column names specified in test_run_multiome.csv for consistency and accuracy.
 
