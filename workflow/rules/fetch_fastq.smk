@@ -1,4 +1,4 @@
-downloads the fastq files
+#downloads the fastq files
 rule fetch_fastq:
     input:
         "{param}/libraries/{id}_libraries.csv"
